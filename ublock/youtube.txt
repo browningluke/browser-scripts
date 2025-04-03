@@ -1,0 +1,41 @@
+!! -- youtube --
+! Hide shorts button in sidebar
+youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
+youtube.com##ytd-mini-guide-entry-renderer:has-text(Shorts)
+
+! Hide shorts section on homepage
+youtube.com##ytd-rich-section-renderer:has(#rich-shelf-header:has-text(Shorts))
+youtube.com##ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(Shorts))
+
+! Hide shorts tab on channel pages
+! Old style
+youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Shorts))
+! New style (2023-10)
+youtube.com##yt-tab-shape:has-text(/^Shorts$/)
+
+! Remove empty spaces in grid
+youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Hide comments
+youtube.com###comments
+
+! Disable hover preview
+www.youtube.com##ytd-video-preview
+www.youtube.com##.ytd-thumbnail-overlay-loading-preview-renderer
+www.youtube.com##.ytd-moving-thumbnail-renderer
+||i.ytimg.com/an_webp/*$image,domain=www.youtube.com
+
+! YT: Misc
+www.youtube.com###voice-search-button
+www.youtube.com##.ytd-rich-section-renderer.style-scope
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+
+youtube.com##ytd-ad-slot-renderer
+
+www.youtube.com##.ytp-show-tiles.videowall-endscreen

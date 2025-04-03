@@ -1,3 +1,9 @@
+[uBlock Origin]
+! Title: browningluke - General Filtering
+! Expires: 1 days
+! Homepage: https://github.com/browningluke/browser-scripts
+! Description: Personal filters for general use
+
 !! Social media
 
 *.tiktok.com

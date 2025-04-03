@@ -1,3 +1,9 @@
+[uBlock Origin]
+! Title: browningluke - YouTube
+! Expires: 1 days
+! Homepage: https://github.com/browningluke/browser-scripts
+! Description: Personal filters for YouTube
+
 !! -- youtube --
 ! Hide shorts button in sidebar
 youtube.com##ytd-guide-entry-renderer:has-text(Shorts)

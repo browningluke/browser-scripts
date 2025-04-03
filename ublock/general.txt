@@ -1,0 +1,31 @@
+!! Social media
+
+*.tiktok.com
+tiktok.com
+
+*.twitter.com
+twitter.com
+
+*.t.co
+t.co
+
+https://*.x.com
+https://x.com
+
+*.instagram.com
+instagram.com
+
+*.bsky.app
+bsky.app
+
+! Instagram - Block reels & explore tabs
+www.instagram.com##a[href="/reels/"]
+www.instagram.com##a[href="/explore/"]
+! Block 'Suggested for you' block
+!www.instagram.com##div:has(> div:has(> div:has(> span:contains("Suggested for you"))))
+
+!! Comments / Forums
+
+! disqus
+||disqus.com/embed/comments/
+###disqus_thread
